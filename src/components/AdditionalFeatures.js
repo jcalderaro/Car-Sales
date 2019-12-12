@@ -1,5 +1,7 @@
+// ------------------------------------------------------------------ //
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
+// ------------------------------------------------------------------ //
 
 const AdditionalFeatures = props => {
   return (
@@ -22,4 +24,8 @@ const AdditionalFeatures = props => {
   );
 };
 
+// ------------------------------------------------------------------ //
+
 export default AdditionalFeatures;
+
+// ------------------------------------------------------------------ //

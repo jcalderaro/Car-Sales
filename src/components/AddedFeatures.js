@@ -1,6 +1,8 @@
+// ------------------------------------------------------------------ //
 import React from 'react';
 import AddedFeature from './AddedFeature';
 import { connect } from "react-redux";
+// ------------------------------------------------------------------ //
 
 const AddedFeatures = ({ car, removeFeature }) => {
   return (
@@ -23,13 +25,19 @@ const AddedFeatures = ({ car, removeFeature }) => {
   );
 };
 
+// ------------------------------------------------------------------ //
+
 const mapStateToProps = state => {
   return {
     car: state.car
   };
 };
 
+// ------------------------------------------------------------------ //
+
 export default connect(
   mapStateToProps,
   {}
 )(AddedFeatures);
+
+// ------------------------------------------------------------------ //

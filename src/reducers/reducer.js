@@ -1,5 +1,7 @@
+// ------------------------------------------------------------------ //
 import { ADD_FEATURE } from "../actions/addActions";
 import { REMOVE_FEATURE } from "../actions/removeActions";
+// ------------------------------------------------------------------ //
 
 const initialState = {
     additionalPrice: 0,
@@ -17,6 +19,8 @@ const initialState = {
       { id: 4, name: 'Rear spoiler', price: 250 }
     ]
 };
+
+// ------------------------------------------------------------------ //
 
 export const reducer = (state = initialState, action ) => {
     switch( action.type){
@@ -53,3 +57,5 @@ export const reducer = (state = initialState, action ) => {
                 return state;
     }
 };
+
+// ------------------------------------------------------------------ //
